@@ -9,7 +9,8 @@ public class Conexion {
 
     private static final String USUARIO = "luna_app";
 
-    private static final String CONTRASENA = "LunaAzul_2026!";
+   private static final String CONTRASENA =
+        System.getenv("DB_PASSWORD");
 
     public static Connection conectar() {
 
